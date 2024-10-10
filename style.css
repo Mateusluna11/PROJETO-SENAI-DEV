@@ -1,0 +1,132 @@
+/* -------------------- Base -------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    box-sizing: border-box; /* Add box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #444;
+    margin: 0.5em 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add margin: 0 */
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* -------------------- Layout -------------------- */
+header {
+    background-color: #fff;
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Add flex-wrap */
+    gap: 1em;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 1em;
+    margin-top: 2em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- Imagens -------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- Botões -------------------- */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------------- Responsividade -------------------- */
+@media (max-width: 1200px) {
+    main {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    main {
+        padding: 0 1em;
+    }
+    header, footer {
+        text-align: center;
+    }
+    section {
+        padding: 1em;
+    } /* Add closing brace */
+}

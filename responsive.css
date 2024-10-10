@@ -1,0 +1,117 @@
+/* Estilo base para dispositivos menores */
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add box-sizing */
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f4f8; /* Add background-color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    margin: 10px 0;
+}
+
+header nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para dispositivos com largura maior que 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+    }
+
+    main {
+        padding: 20px;
+        display: flex; /* Add display: flex */
+        flex-direction: column; /* Add flex-direction: column */
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    main section h2, main section h3, main section p {
+        flex-basis: 100%;
+    }
+
+    main section img {
+        max-width: 48%;
+    }
+}
+
+/* Ajustes para dispositivos maiores que 1024px (desktops grandes) */
+@media (min-width: 1024px) {
+    header nav ul {
+        justify-content: flex-end;
+    }
+
+    main section img {
+        max-width: 30%;
+    }
+
+    footer {
+        text-align: right;
+        padding: 20px;
+    }
+}
+
+/* Ajustes específicos para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    main section h2 {
+        font-size: 1.3rem;
+    }
+
+    main section h3 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
